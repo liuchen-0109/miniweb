@@ -11,8 +11,7 @@ Page({
         takeSession: false,
         requestResult: ''
     },
-
-    onLoad: function () {
+    bindGetUserInfo: function () {
         if (this.data.logged) return
 
         util.showBusy('正在登录')
@@ -23,6 +22,8 @@ Page({
             qcloud.loginWithCode({
                 success: res => {
                     this.setData({ userInfo: res, logged: true })
+                    console.log(res);
+
                     util.showSuccess('登录成功')
                 },
                 fail: err => {
@@ -43,6 +44,9 @@ Page({
             })
         }
     },
-
-
+    questionWeb:function(){
+        wx.navigateTo({
+            url:"/pages/question/question"
+        })
+    }
 })

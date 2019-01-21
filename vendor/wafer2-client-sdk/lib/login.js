@@ -10,11 +10,11 @@ var Session = require('./session');
 /**
  * 微信登录，获取 code 和 encryptData
  */
-function getWxLoginResult(cb) {
+function getWxLoginResult (cb) {
     wx.login({
-        success(loginResult) {
+        success (loginResult) {
             wx.getUserInfo({
-                success(userResult) {
+                success (userResult) {
                     cb(null, {
                         code: loginResult.code,
                         encryptedData: userResult.encryptedData,
@@ -22,21 +22,20 @@ function getWxLoginResult(cb) {
                         userInfo: userResult.userInfo
                     })
                 },
-                fail(userError) {
+                fail (userError) {
                     cb(new Error('获取微信用户信息失败，请检查网络状态'), null)
                 }
             });
         },
-        fail(loginError) {
+        fail (loginError) {
             cb(new Error('微信登录失败，请检查网络状态'), null)
         }
     })
 }
 
-const noop = function noop() {
-}
+const noop = function noop() {}
 const defaultOptions = {
-    method: 'POST',
+    method: 'GET',
     success: noop,
     fail: noop,
     loginUrl: null,
@@ -54,7 +53,7 @@ const defaultOptions = {
  * @param {Function} [opts.success] 可选。登录成功后的回调函数，参数 userInfo 微信用户信息
  * @param {Function} [opts.fail]    可选。登录失败后的回调函数，参数 error 错误信息
  */
-function login(opts) {
+function login (opts) {
     opts = Object.assign({}, defaultOptions, opts)
 
     if (!opts.loginUrl) {
@@ -78,7 +77,7 @@ function login(opts) {
             url: opts.loginUrl,
             header: header,
             method: opts.method,
-            success(result) {
+            success (result) {
                 const data = result.data;
 
                 if (!data || data.code !== 0 || !data.data || !data.data.skey) {
@@ -95,7 +94,7 @@ function login(opts) {
                 Session.set(res)
                 opts.success(res.userinfo)
             },
-            fail(err) {
+            fail (err) {
                 console.error('登录失败，可能是网络错误或者服务器发生异常')
                 opts.fail(err)
             }
@@ -116,7 +115,7 @@ function login(opts) {
  * @param {Function} [opts.success] 可选。登录成功后的回调函数，参数 userInfo 微信用户信息
  * @param {Function} [opts.fail]    可选。登录失败后的回调函数，参数 error 错误信息
  */
-function loginWithCode(opts) {
+function loginWithCode (opts) {
     opts = Object.assign({}, defaultOptions, opts)
 
     if (!opts.loginUrl) {
@@ -124,16 +123,18 @@ function loginWithCode(opts) {
     }
 
     wx.login({
-        success(loginResult) {
+        success (loginResult) {
             // 构造请求头，包含 code、encryptedData 和 iv
-            sesson_code = loginResult.code
+            const header = {
+                [constants.WX_HEADER_CODE]: loginResult.code
+            }
 
             // 请求服务器登录地址，获得会话信息
             wx.request({
                 url: opts.loginUrl,
-                data: sesson_code,
+                header: header,
                 method: opts.method,
-                success(result) {
+                success (result) {
                     const data = result.data;
 
                     if (!data || data.code !== 0 || !data.data || !data.data.skey) {
@@ -150,7 +151,7 @@ function loginWithCode(opts) {
                     Session.set(res)
                     opts.success(res.userinfo)
                 },
-                fail(err) {
+                fail (err) {
                     console.error('登录失败，可能是网络错误或者服务器发生异常')
                     opts.fail(err)
                 }
@@ -159,8 +160,8 @@ function loginWithCode(opts) {
     })
 }
 
-function setLoginUrl(loginUrl) {
+function setLoginUrl (loginUrl) {
     defaultOptions.loginUrl = loginUrl;
 }
 
-module.exports = {login, setLoginUrl, loginWithCode}
+module.exports = { login, setLoginUrl, loginWithCode }
