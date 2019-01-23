@@ -4,21 +4,21 @@ Page({
     data: {
         title_min: 5,
         title_max: 90,
-        min:1,
-        max:30,
+        min: 1,
+        max: 30,
         title: '',
         input_one: '',
         input_two: '',
         input_three: '',
-        texts_title:'',
+        texts_title: '',
         texts_A: '',
         texts_B: '',
         texts_C: '',
-        active:app.globalData.active,
+        active: false,
     },
-    onLoad:function(){
+    onLoad: function () {
         this.setData({
-            title:app.globalData.title_one,
+            title: app.globalData.title_one,
             input_one: app.globalData.one_A,
             input_two: app.globalData.one_B,
             input_three: app.globalData.one_C,
@@ -26,7 +26,7 @@ Page({
     },
     input_title: function (e) {//获取标题
         app.globalData.title_one = e.detail.value;
-        this.title_inputs(e);
+        app.title_inputs(e,this);
 
     },
     input_one: function (e) {//问题A
@@ -39,33 +39,34 @@ Page({
         app.globalData.one_C = e.detail.value;
     },
     create: function () {//创建题目
-        app.create();
+        var check_title_res = app.checkTitle(this);
+        if (check_title_res[0] == 0) {
+            app.showErrorMsg(check_title_res[1], 1500);
+            return
+        }
+        app.create(this);
+
     },
     nextAnswer: function () {//下一题
         wx.navigateTo({url: '/pages/two/two'}) // 跳转下一页
     },
-    //字数限制
-    title_inputs: function (e) {
-        // 获取输入框的内容
-        var value = e.detail.value;
-        // 获取输入框内容的长度
-        var len = parseInt(value.length);
 
-        //最少字数限制
-        if (len <= this.data.title_min)
-            this.setData({
-                texts_title:'字数不够哦~'
-            })
-        else if (len >= this.data.title_min)
-            this.setData({
-                texts_title: " "
-            })
+    checkTitle: function () {
+        var title_one = app.globalData.title_one;
+        var title_two = app.globalData.title_two;
+        var title_three = app.globalData.title_three;
+        var title_min = this.data.title_min;
+        if (title_one && title_one.length < title_min) {
+            return [0, '第一题题目少于' + title_min + '字'];
+        } else if (title_two && title_two.length < title_min) {
+            return [0, '第二题题目少于' + title_min + '字'];
+        } else if (title_three && title_three.length < title_min) {
+            return [0, '第三题题目少于' + title_min + '字'];
+        } else if (!title_three && !title_one && !title_two) {
+            return [0, '您未设置题目']
+        }
+        return [1, '标题检查通过']
+    },
 
-        //最多字数限制
-        if (len > this.data.title_max) return;
-        // 当输入框内容的长度大于最大长度限制（max)时，终止setData()的执行
-        this.setData({
-            currentWordNumber: len //当前字数
-        });
-    }
+
 })

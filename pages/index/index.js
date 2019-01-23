@@ -3,7 +3,7 @@ var util = require('../../utils/util.js')
 var config = require('../../config')
 qcloud.setLoginUrl(config.service.loginUrl)
 
-
+var app = getApp()
 Page({
     data: {
         userInfo: {},
@@ -13,7 +13,7 @@ Page({
     },
     bindGetUserInfo: function () {
         if (this.data.logged) return
-
+        var golbal = app;
         util.showBusy('正在登录')
 
         const session = qcloud.Session.get()
@@ -22,7 +22,8 @@ Page({
             qcloud.loginWithCode({
                 success: res => {
                     this.setData({ userInfo: res, logged: true })
-                    console.log(res);
+                    golbal.globalData.userInfo = res;
+                    golbal.globalData.openid = res.openId;
 
                     util.showSuccess('登录成功')
                 },
@@ -35,6 +36,8 @@ Page({
             qcloud.login({
                 success: res => {
                     this.setData({ userInfo: res, logged: true })
+                    golbal.globalData.userInfo = res;
+                    golbal.globalData.openid = res.openId;
                     util.showSuccess('登录成功')
                 },
                 fail: err => {
@@ -46,7 +49,7 @@ Page({
     },
     questionWeb:function(){
         wx.navigateTo({
-            url:"/pages/question/question"
+            url:"/pages/one/one"
         })
     }
 })

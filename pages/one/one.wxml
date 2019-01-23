@@ -19,7 +19,7 @@
 </view>
 
 <view>
-    <button bindtap="create" disabled="{{active}}" loading="{{active}}"> ok</button>
+    <button bindtap="create" disabled="{{active}}" > ok</button>
 </view>
 <view>
     <button bindtap="nextAnswer"> next</button>

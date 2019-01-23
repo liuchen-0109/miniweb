@@ -19,7 +19,8 @@
 
 
 </view>
-<view><button bindtap="create"> ok </button>
+<view>    <button bindtap="create" disabled="{{active}}" > ok</button>
+
     <button bindtap="beforeAnswer"> before</button>
 </view>
 
