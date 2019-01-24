@@ -49,7 +49,7 @@ Page({
     },
     questionWeb:function(){
         wx.navigateTo({
-            url:"/pages/one/one"
+            url:"/pages/answer/answer"
         })
     }
 })

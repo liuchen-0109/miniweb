@@ -1,5 +1,25 @@
-<view>{{title}}</view>
-<view>{{one}}</view>
-<view>{{two}}</view>
-<view>{{three}}</view>
+
+<swiper class='swiper-item__content' current="" bindchange="changeswiper">
+    <swiper-item >
+        <view bindtap="touch_title">{{title}}1</view>
+        <view>{{one}}</view>
+        <view>{{two}}</view>
+        <view>{{three}}</view>
+        <view>{{type}}</view>
+    </swiper-item>
+    <swiper-item wx:if="{{show_two}}">
+        <view bindtap="touch_title">{{title}}2</view>
+        <view>{{one}}</view>
+        <view>{{two}}</view>
+        <view>{{three}}</view>
+        <view>{{type}}</view>
+    </swiper-item>
+    <swiper-item wx:if="{{show_three}}">
+        <view bindtap="touch_title">{{title}}3</view>
+        <view>{{one}}</view>
+        <view>{{two}}</view>
+        <view>{{three}}</view>
+        <view>{{type}}</view>
+    </swiper-item>
+</swiper>
 
