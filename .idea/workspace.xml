@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad6a4155-eb31-42dd-b497-e289ae10fcca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/question/question.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/answer/answer.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/answer/answer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/answer/answer.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/answer/answer.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/one/one.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question/question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/one/one.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question/question.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/one/one.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/one/one.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question/question.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/three/three.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/three/three.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/three/three.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/three/three.wxss" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,31 +25,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/answer/answer.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="1295">
+              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#swiper#0;n#!!top" expanded="true" />
+                <element signature="n#textarea#0;n#view#0;n#swiper-item#1;n#swiper#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,17 +57,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/answer/answer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+            <state relative-caret-position="6142">
+              <caret line="166" column="29" lean-forward="true" selection-start-line="166" selection-start-column="29" selection-end-line="166" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+        <entry file="file://$PROJECT_DIR$/pages/question/question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3219">
-              <caret line="87" column="26" selection-start-line="85" selection-start-column="22" selection-end-line="87" selection-end-column="26" />
+            <state relative-caret-position="7400">
+              <caret line="200" selection-start-line="200" selection-end-line="255" />
+              <folding>
+                <element signature="e#6761#8814#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,35 +78,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="276">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/wafer2-client-sdk/index.js">
+        <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="296">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/login.js">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2146">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="74">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.js">
+        <entry file="file://$PROJECT_DIR$/pages/question/question.wxss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="999">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="53" />
+            <state relative-caret-position="74">
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1665">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -101,25 +124,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>case</find>
-      <find>next</find>
-      <find>navigateTo</find>
-      <find>store</find>
-      <find>before</find>
-      <find>be</find>
-      <find>make</find>
       <find>ma</find>
-      <find>texts_title</find>
       <find>f</find>
       <find>CREATE_MAIN</find>
       <find>showModel</find>
       <find>app</find>
       <find>title_min</find>
       <find>userInfo</find>
-      <find>checkTitle</find>
-      <find>create</find>
       <find>console.log</find>
       <find>config</find>
+      <find>touch_title</find>
+      <find>areas_ans</find>
+      <find>texts_title</find>
+      <find>title_inputs</find>
+      <find>beforeAnswer3</find>
+      <find>texts_title_one</find>
+      <find>oneone</find>
+      <find>input_one</find>
+      <find>title</find>
+      <find>global</find>
+      <find>showErrorMsg</find>
+      <find>create</find>
+      <find>input_title</find>
+      <find>answer</find>
+      <find>checkTitle</find>
+      <find>console</find>
+      <find>code</find>
+      <find>hint</find>
+      <find>next</find>
+      <find>ans_container</find>
+      <find>one2</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -136,24 +170,24 @@
         <option value="$PROJECT_DIR$/pages/question/question.json" />
         <option value="$PROJECT_DIR$/pages/index/index.wxml" />
         <option value="$PROJECT_DIR$/pages/question/question.wxss" />
-        <option value="$PROJECT_DIR$/pages/question/question.wxml" />
-        <option value="$PROJECT_DIR$/pages/question/question.js" />
         <option value="$PROJECT_DIR$/pages/one/one.json" />
         <option value="$PROJECT_DIR$/pages/one/one.wxss" />
-        <option value="$PROJECT_DIR$/app.wxss" />
         <option value="$PROJECT_DIR$/pages/three/three.wxss" />
         <option value="$PROJECT_DIR$/pages/two/two.wxss" />
-        <option value="$PROJECT_DIR$/pages/one/one.wxml" />
         <option value="$PROJECT_DIR$/pages/three/three.wxml" />
         <option value="$PROJECT_DIR$/pages/two/two.wxml" />
-        <option value="$PROJECT_DIR$/pages/one/one.js" />
         <option value="$PROJECT_DIR$/pages/two/two.js" />
         <option value="$PROJECT_DIR$/pages/three/three.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/pages/answer/answer.json" />
         <option value="$PROJECT_DIR$/config.js" />
-        <option value="$PROJECT_DIR$/pages/answer/answer.js" />
+        <option value="$PROJECT_DIR$/pages/one/one.js" />
+        <option value="$PROJECT_DIR$/pages/one/one.wxml" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/pages/question/question.js" />
+        <option value="$PROJECT_DIR$/pages/question/question.wxml" />
+        <option value="$PROJECT_DIR$/app.wxss" />
         <option value="$PROJECT_DIR$/pages/answer/answer.wxml" />
+        <option value="$PROJECT_DIR$/pages/answer/answer.js" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/pages/index/index.js" />
       </list>
@@ -177,35 +211,6 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="wafer2-client-sdk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="wafer2-client-sdk" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -261,7 +266,7 @@
       <workItem from="1548206217708" duration="3217000" />
       <workItem from="1548210875721" duration="12307000" />
       <workItem from="1548230279234" duration="7739000" />
-      <workItem from="1548292700624" duration="5751000" />
+      <workItem from="1548292700624" duration="20747000" />
     </task>
     <task id="LOCAL-00001" summary="样式">
       <created>1548066836088</created>
@@ -284,17 +289,23 @@
       <option name="project" value="LOCAL" />
       <updated>1548238195735</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="存储数据">
+      <created>1548299204348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548299204348</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77457000" />
+    <option name="totallyTimeSpent" value="92453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28545234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2891198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,7 +319,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.09742441" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.09731544" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -347,56 +358,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/two/two.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/three/three.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/one/one.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/two/two.wxss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/three/three.wxss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/one/one.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/three/three.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="n#form#0;n#view#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/two/two.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/two/two.json" />
+    <entry file="file://$PROJECT_DIR$/pages/three/three.json" />
+    <entry file="file://$PROJECT_DIR$/pages/two/two.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/three/three.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/three/three.wxml" />
     <entry file="file://$PROJECT_DIR$/pages/index/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -411,13 +377,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/three/three.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1924">
-          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/three/three.js" />
     <entry file="file://$PROJECT_DIR$/pages/index/index.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -425,30 +385,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/two/two.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/one/one.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/one/one.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="n#form#0;n#view#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/two/two.js" />
     <entry file="file://$PROJECT_DIR$/pages/answer/answer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -459,24 +396,10 @@
     <entry file="file://$PROJECT_DIR$/pages/answer/answer.wxss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3219">
-          <caret line="87" column="26" selection-start-line="85" selection-start-column="22" selection-end-line="87" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/wafer2-client-sdk/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2146">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -487,24 +410,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/answer/answer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/answer/answer.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
+    <entry file="file://$PROJECT_DIR$/vendor/wafer2-client-sdk/lib/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -515,10 +424,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/two/two.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/question/question.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/question/question.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="31" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#view#0;n#swiper-item#0;n#swiper#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#textarea#1;n#view#0;n#swiper-item#0;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#textarea#2;n#view#0;n#swiper-item#0;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#textarea#3;n#view#0;n#swiper-item#0;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#1;n#swiper-item#0;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#swiper-item#1;n#swiper#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#textarea#1;n#view#0;n#swiper-item#1;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#textarea#2;n#view#0;n#swiper-item#1;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#textarea#3;n#view#0;n#swiper-item#1;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#1;n#swiper-item#1;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#1;n#swiper-item#1;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#swiper-item#2;n#swiper#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#textarea#1;n#view#0;n#swiper-item#2;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#textarea#2;n#view#0;n#swiper-item#2;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#textarea#3;n#view#0;n#swiper-item#2;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#1;n#swiper-item#2;n#swiper#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/answer/answer.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1295">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#swiper#0;n#!!top" expanded="true" />
+            <element signature="n#textarea#0;n#view#0;n#swiper-item#1;n#swiper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/answer/answer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6142">
+          <caret line="166" column="29" lean-forward="true" selection-start-line="166" selection-start-column="29" selection-end-line="166" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/question/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7400">
+          <caret line="200" selection-start-line="200" selection-end-line="255" />
+          <folding>
+            <element signature="e#6761#8814#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/question/question.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="276">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
         </state>
       </provider>
     </entry>

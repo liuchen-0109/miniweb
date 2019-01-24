@@ -1,0 +1,117 @@
+<swiper current="{{currentTab}}" style="height:900rpx" duration="100">
+    <swiper-item data-current="0">
+        <view class="web_container">
+    <textarea class="areas" auto-height="true"
+              placeholder='写下内心想问的话{{title_min}}-{{title_max}}字' minlength="{{min}}"
+              maxlength="{{title_max}}" value="{{title}}"
+              bindinput="input_title" data-key="one">
+        <text class="currentWordNumber">{{currentWordNumber|0}}/{{title_max}}</text>
+
+    </textarea>
+            <text class="hint" wx:if="{{texts_title_one}}">{{texts_title_one}}</text>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='A选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_one" value="{{one}}" data-key="one">
+                <div style="margin:0 auto"></div>
+    </textarea>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='B选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_two" value="{{two}}" data-key="one">
+            <div style="margin:0 auto"></div>
+
+    </textarea>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='C选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_three" value="{{three}}" data-key="one">
+                <div style="margin:0 auto"></div>
+
+    </textarea>
+        </view>
+        <view>
+            <button bindtap="nextAnswer1" size="mini" style="float:right;margin-right: 20rpx;"> 下一题</button>
+        </view>
+    </swiper-item>
+    <swiper-item data-current="1">
+        <view class="web_container">
+    <textarea class="areas" auto-height="true"
+              placeholder='写下内心想问的话{{title_min}}-{{title_max}}字' minlength="{{min}}"
+              maxlength="{{title_max}}" value="{{title}}"
+              bindinput="input_title" data-key="two">
+        <text class="currentWordNumber">{{currentWordNumber|0}}/{{title_max}}</text>
+
+    </textarea>
+            <text class="hint" wx:if="{{texts_title_two}}">{{texts_title_two}}</text>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='A选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_one" value="{{one}}" data-key="two">
+                <div style="margin:0 auto"></div>
+    </textarea>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='B选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_two" value="{{two}}" data-key="two">
+            <div style="margin:0 auto"></div>
+
+    </textarea>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='C选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_three" value="{{three}}" data-key="two">
+                <div style="margin:0 auto"></div>
+
+    </textarea>
+        </view>
+        <view>
+            <button bindtap="beforeAnswer2" size="mini" style="float:left;margin-left: 20rpx;"> 上一题</button>
+        </view>
+        <view>
+            <button bindtap="nextAnswer2" size="mini" style="float:right;margin-right: 20rpx;"> 下一题</button>
+        </view>
+    </swiper-item>
+    <swiper-item data-current="2">
+        <view class="web_container">
+    <textarea class="areas" auto-height="true"
+              placeholder='写下内心想问的话{{title_min}}-{{title_max}}字' minlength="{{min}}"
+              maxlength="{{title_max}}" value="{{title}}"
+              bindinput="input_title" data-key="three">
+        <text class="currentWordNumber">{{currentWordNumber|0}}/{{title_max}}</text>
+
+    </textarea>
+            <text class="hint" wx:if="{{texts_title_three}}">{{texts_title_three}}</text>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='A选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_one" value="{{one}}" data-key="three">
+                <div style="margin:0 auto"></div>
+    </textarea>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='B选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_two" value="{{two}}" data-key="three">
+            <div style="margin:0 auto"></div>
+
+    </textarea>
+
+            <textarea auto-height="true" class="areas_ans" placeholder='C选项（{{min}}-{{max}}字）' minlength="{{min}}"
+                      maxlength="{{max}}"
+                      bindinput="input_three" value="{{three}}" data-key="three">
+                <div style="margin:0 auto"></div>
+
+    </textarea>
+        </view>
+        <view>
+            <button bindtap="beforeAnswer3" size="mini" style="float:left;margin-left: 20rpx;"> 上一题</button>
+        </view>
+    </swiper-item>
+
+</swiper>
+
+<view>
+    <button bindtap="create" disabled="{{active}}"> 创建问题</button>
+</view>
+
+
