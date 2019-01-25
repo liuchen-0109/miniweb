@@ -235,6 +235,7 @@ Page({
                                     duration: 1500,
                                     mask: true
                                 });
+                                wx.redirectTo({url:'/pages/questionfinish/questionfinish?id='+res.data.data.id})
                                 wx.hideLoading();
                                 that.setData({active: false})
                             }

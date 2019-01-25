@@ -23,14 +23,24 @@ Page({
         show_two: false,
         show_three: false,
         currentTab: '',
-        showButton:false,
-        active:false,
+        showButton: false,
+        active: false,
+        backcolor: '',
+        act_one_1: '#ccc',
+        act_one_2: '#ccc',
+        act_one_3: '#ccc',
+        act_two_1: '#ccc',
+        act_two_2: '#ccc',
+        act_two_3: '#ccc',
+        act_three_1: '#ccc',
+        act_three_2: '#ccc',
+        act_three_3: '#ccc',
     },
-    request_data:{
-        pid:'',
-        one:0,
-        two:0,
-        three:0,
+    request_data: {
+        pid: '',
+        one: 0,
+        two: 0,
+        three: 0,
     },
     onLoad: function () {
         var that = this;
@@ -95,38 +105,58 @@ Page({
         })
     },
     ans_one: function (e) {
-        this.request_data.one = e.currentTarget.dataset.value;
-        if(this.data.num>1){
+        var key = this.request_data.one = e.currentTarget.dataset.value;
+       this.changeColoe(1,key);
+        if (this.data.num > 1) {
             this.setData({
-                currentTab:1
+                currentTab: 1
             });
-        }else{
-            this.setData({showButton:true})
-        }
-    },
-    ans_two:function(e){
-        this.request_data.two = e.currentTarget.dataset.value;
-        if(this.data.num>2){
-            this.setData({
-                currentTab:2
-            });
-        }else{
-            if(this.request_data.one && this.request_data.two){
-                this.setData({showButton:true})
+            if (this.data.num == 2) {
+                if (this.request_data.one && this.request_data.two) {
+                    this.setData({
+                        showButton: true
+                    });
+                } else if (this.data.num == 3) {
+                    if (this.request_data.one && this.request_data.two && this.request_data.three) {
+                        this.setData({
+                            showButton: true
+                        });
+                    }
+                }
+            } else {
+                this.setData({showButton: true})
             }
         }
-    },
-    ans_three:function(e){
-        this.request_data.three = e.currentTarget.dataset.value;
-        if(this.request_data.one && this.request_data.two && this.request_data.three){
-            this.setData({showButton:true})
+    }
+    ,
+    ans_two: function (e) {
+        var key = this.request_data.two = e.currentTarget.dataset.value;
+        this.changeColoe(2,key);
+        if (this.data.num > 2) {
+            this.setData({
+                currentTab: 2
+            });
+        } else {
+            if ((this.request_data.one && this.request_data.two) || (this.request_data.one && this.request_data.two && this.request_data.three)) {
+                this.setData({showButton: true})
+            }
+        }
+    }
+    ,
+    ans_three: function (e) {
+        var key = this.request_data.three = e.currentTarget.dataset.value;
+        this.changeColoe(3,key);
+        if (this.request_data.one && this.request_data.two && this.request_data.three) {
+            this.setData({showButton: true})
         }
 
-    },
-    makeAnswer:function(){
+    }
+    ,
+    makeAnswer: function () {
         this.request_data.openid = app.globalData.openid
-        this.showModel('小提示','您将提交回答，提交后不可修改哦~','确认提交','返回修改')
-    },
+        this.showModel('小提示', '您将提交回答，提交后不可修改哦~', '确认提交', '返回修改')
+    }
+    ,
     showModel: function (title, content, confirm, cancel) {
         var that = this;
 
@@ -142,7 +172,7 @@ Page({
                         title: '数据处理中',
                     });
                     wx.request({
-                        dataType:'json',
+                        dataType: 'json',
                         header: {
                             'content-type': 'application/x-www-form-urlencoded'
                         },
@@ -151,24 +181,25 @@ Page({
                         data: that.request_data,
 
                         success: function (res) {
-                            if(res.data.code == 1){
-                                app.showErrorMsg(res.data.msg,1500);
+                            if (res.data.code == 1) {
+                                app.showErrorMsg(res.data.msg, 1500);
                                 wx.hideLoading();
                                 that.setData({active: false})
-                            }else{
+                            } else {
                                 wx.showToast({
                                     title: res.data.msg,
                                     icon: 'success',
                                     duration: 1500,
                                     mask: true
                                 });
+                                wx.redirectTo({url:'/pages/answerfinish/answerfinish'})
                                 wx.hideLoading();
-                                that.setData({active: false})
+                                that.setData({active: false});
                             }
 
                         },
                         fail: function () {
-                            app.showErrorMsg('网络连接失败',1500);
+                            app.showErrorMsg('网络连接失败', 1500);
                             wx.hideLoading();
                             that.setData({active: false})
                         }
@@ -178,6 +209,67 @@ Page({
                 }
             }
         })
+    }
+    ,
+    changeColoe: function (type, key) {
+        var color = 'blue';
+        if (type == 1) {
+            this.setData({
+                act_one_1: '',
+                act_one_2: '',
+                act_one_3: '',
+            })
+            if (key == 1) {
+                this.setData({
+                    act_one_1: color,
+                })
+            } else if (key == 2) {
+                this.setData({
+                    act_one_2: color,
+                })
+            } else {
+                this.setData({
+                    act_one_3: color,
+                })
+            }
+        } else if (type == 2) {
+            this.setData({
+                act_two_1: '',
+                act_two_2: '',
+                act_two_3: '',
+            })
+            if (key == 1) {
+                this.setData({
+                    act_two_1: color,
+                })
+            } else if (key == 2) {
+                this.setData({
+                    act_two_2: color,
+                })
+            } else {
+                this.setData({
+                    act_two_3: color,
+                })
+            }
+        } else {
+            this.setData({
+                act_three_1: '',
+                act_three_2: '',
+                act_three_3: '',
+            })
+            if (key == 1) {
+                this.setData({
+                    act_three_1: color,
+                })
+            } else if (key == 2) {
+                this.setData({
+                    act_three_2: color,
+                })
+            } else {
+                this.setData({
+                    act_three_3: color,
+                })
+            }
+        }
     },
-
 })

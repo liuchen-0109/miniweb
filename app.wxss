@@ -5,10 +5,13 @@
     margin-top: 30rpx;
 }
 .areas{
+    width: 80%;
     height:152rpx;
     font-size: 30rpx;
     text-indent: 28rpx;
     padding-top: 30rpx;
+    paddint-left:40rpx;
+    paddint-right:40rpx;
     margin: 80rpx auto;
     overflow: hidden;
     position: relative;
@@ -17,6 +20,7 @@
 }
 
 .areas_ans{
+    width: 80%;
     height:100rpx;
     font-size: 30rpx;
     text-indent: 28rpx;
@@ -32,8 +36,8 @@
     font-size: 28rpx;
     color: gray;
     position: absolute;
-    left: 593rpx;
-    top: -6rpx;
+    left: 485rpx;
+    top: -7rpx;
 }
 .hint{
     font-size: 28rpx;

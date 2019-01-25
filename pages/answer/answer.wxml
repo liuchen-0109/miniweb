@@ -1,16 +1,16 @@
 <swiper current="{{currentTab}}" style="height: 800rpx">
     <swiper-item data-current="0">
         <view class="web_container">
-    <view  class="areas" auto-height="true" >
+    <view  class="title_container" auto-height="true" >
             {{title1}}
     </view >
-            <view  auto-height="true" class="ans_container" bindtap="ans_one" data-value="1">
+            <view  auto-height="true" class="answer_container one" bindtap="ans_one" data-value="1" style="border-color:{{act_one_1}}">
                     {{one1}}
     </view >
-            <view  auto-height="true" class="ans_container" bindtap="ans_one" data-value="2">
+            <view  auto-height="true" class="answer_container one" bindtap="ans_one" data-value="2" style="border-color:{{act_one_2}}">
                     {{two1}}
     </view >
-            <view  auto-height="true" class="ans_container" bindtap="ans_one" data-value="3">
+            <view  auto-height="true" class="answer_container one" bindtap="ans_one" data-value="3" style="border-color:{{act_one_3}}">
                     {{three1}}
     </view >
 
@@ -19,34 +19,34 @@
     </swiper-item>
     <swiper-item wx:if="{{show_two}}" data-current="1">
         <view class="web_container">
-    <textarea class="areas" auto-height="true">
+    <view class="title_container" auto-height="true">
             {{title2}}
-    </textarea>
-            <textarea auto-height="true" class="areas_ans" bindtap="ans_two" data-value="1">
+    </view>
+            <view auto-height="true" class="answer_container two" bindtap="ans_two" data-value="1" style="border-color:{{act_two_1}}">
                     {{one2}}
-    </textarea>
-            <textarea auto-height="true" class="areas_ans" bindtap="ans_two" data-value="2">
+    </view>
+            <view auto-height="true" class="answer_container two" bindtap="ans_two" data-value="2" style="border-color:{{act_two_2}}">
                     {{two2}}
-    </textarea>
-            <textarea auto-height="true" class="areas_ans" bindtap="ans_two" data-value="3">
+    </view>
+            <view auto-height="true" class="answer_container two" bindtap="ans_two" data-value="3" style="border-color:{{act_two_3}}">
                     {{three2}}
-    </textarea>
+    </view>
         </view>
     </swiper-item>
     <swiper-item wx:if="{{show_three}}" data-current="2">
         <view class="web_container">
-    <textarea class="areas" auto-height="true">
+    <view class="title_container" auto-height="true">
             {{title3}}
-    </textarea>
-            <textarea auto-height="true" class="areas_ans" bindtap="ans_three" data-value="1">
+    </view>
+            <view  class="areas_container" bindtap="answer_container three" data-value="1" style="border-color:{{act_three_1}}">
                     {{one3}}
-    </textarea>
-            <textarea auto-height="true" class="areas_ans" bindtap="ans_three" data-value="2">
+    </view>
+            <view auto-height="true" class="answer_container three" bindtap="ans_three" data-value="2" style="border-color:{{act_three_2}}">
                     {{two3}}
-    </textarea>
-            <textarea auto-height="true" class="areas_ans" bindtap="ans_three" data-value="3">
+    </view>
+            <view auto-height="true" class="answer_container three" bindtap="ans_three" data-value="3" style="border-color:{{act_three_3}}">
                     {{three3}}
-    </textarea>
+    </view>
 
 
         </view>

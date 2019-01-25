@@ -1,4 +1,4 @@
-<swiper current="{{currentTab}}" style="height:900rpx" duration="100">
+<swiper current="{{currentTab}}" style="height:900rpx" duration="300">
     <swiper-item data-current="0">
         <view class="web_container">
     <textarea class="areas" auto-height="true"
@@ -31,7 +31,7 @@
     </textarea>
         </view>
         <view>
-            <button bindtap="nextAnswer1" size="mini" style="float:right;margin-right: 20rpx;"> 下一题</button>
+            <button bindtap="nextAnswer1" size="mini" style="float:right;margin-right: 40rpx;"> 下一题</button>
         </view>
     </swiper-item>
     <swiper-item data-current="1">
@@ -66,10 +66,10 @@
     </textarea>
         </view>
         <view>
-            <button bindtap="beforeAnswer2" size="mini" style="float:left;margin-left: 20rpx;"> 上一题</button>
+            <button bindtap="beforeAnswer2" size="mini" style="float:left;margin-left: 40rpx;"> 上一题</button>
         </view>
         <view>
-            <button bindtap="nextAnswer2" size="mini" style="float:right;margin-right: 20rpx;"> 下一题</button>
+            <button bindtap="nextAnswer2" size="mini" style="float:right;margin-right: 40rpx;"> 下一题</button>
         </view>
     </swiper-item>
     <swiper-item data-current="2">
@@ -104,7 +104,7 @@
     </textarea>
         </view>
         <view>
-            <button bindtap="beforeAnswer3" size="mini" style="float:left;margin-left: 20rpx;"> 上一题</button>
+            <button bindtap="beforeAnswer3" size="mini" style="float:left;margin-left: 40rpx;"> 上一题</button>
         </view>
     </swiper-item>
 

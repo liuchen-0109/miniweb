@@ -1,0 +1,29 @@
+.title_container{
+    font-size: 30rpx;
+    text-indent: 28rpx;
+    padding: 30rpx 25rpx;
+    margin: 80rpx 25rpx;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    font-weight:bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid #ccc;
+    border-radius: 25rpx;
+}
+.answer_container{
+    width: auto;
+    font-size: 30rpx;
+    text-indent: 28rpx;
+    padding: 10rpx 5rpx;
+    margin: 80rpx 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius:10px;
+}

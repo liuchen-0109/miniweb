@@ -11,6 +11,11 @@ Page({
         takeSession: false,
         requestResult: ''
     },
+    onLoad:function(res){
+        if(res.id){
+            console.log(res.id)
+        }
+    },
     bindGetUserInfo: function () {
         if (this.data.logged) return
         var golbal = app;
@@ -49,7 +54,8 @@ Page({
     },
     questionWeb:function(){
         wx.navigateTo({
-            url:"/pages/question/question"
+            // url:"/pages/answer/answer"
+             url:"/pages/question/question"
         })
     }
 })
