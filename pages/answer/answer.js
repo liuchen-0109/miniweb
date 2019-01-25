@@ -159,7 +159,6 @@ Page({
     ,
     showModel: function (title, content, confirm, cancel) {
         var that = this;
-
         wx.showModal({
             title: title,
             content: content,

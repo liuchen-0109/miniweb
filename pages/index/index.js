@@ -26,6 +26,8 @@ Page({
         if (session) {
             qcloud.loginWithCode({
                 success: res => {
+                    console.log(res.openId)
+
                     this.setData({ userInfo: res, logged: true })
                     golbal.globalData.userInfo = res;
                     golbal.globalData.openid = res.openId;
@@ -40,6 +42,8 @@ Page({
         } else {
             qcloud.login({
                 success: res => {
+                    console.log(res.openId)
+
                     this.setData({ userInfo: res, logged: true })
                     golbal.globalData.userInfo = res;
                     golbal.globalData.openid = res.openId;
