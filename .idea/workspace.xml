@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad6a4155-eb31-42dd-b497-e289ae10fcca" name="Default Changelist" comment="">
+    <list default="true" id="ad6a4155-eb31-42dd-b497-e289ae10fcca" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pages/answer/answer.js" afterPath="$PROJECT_DIR$/pages/answer/answer.js" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" afterPath="$PROJECT_DIR$/pages/index/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -288,7 +286,7 @@
       <workItem from="1548380365399" duration="10999000" />
       <workItem from="1548406754675" duration="90000" />
       <workItem from="1548413569900" duration="1402000" />
-      <workItem from="1548415575719" duration="927000" />
+      <workItem from="1548415575719" duration="1098000" />
     </task>
     <task id="LOCAL-00001" summary="样式">
       <created>1548066836088</created>
@@ -325,11 +323,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548321414126</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Default Changelist">
+      <created>1548417865115</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548417865115</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105899000" />
+    <option name="totallyTimeSpent" value="106070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="126" y="180" width="1594" height="935" extended-state="0" />
@@ -366,7 +371,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="样式" />
     <MESSAGE value="存储数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="存储数据" />
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
