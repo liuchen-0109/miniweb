@@ -32,3 +32,6 @@
 
  <button bindtap="questionWeb">按我一下</button>
 </view>
+ <button bindtap="questionWeb" wx:if="{{!hasid}}">创建题目</button>
+ <button bindtap="answerWeb" wx:if="{{hasid}}">开始答题</button>
+

@@ -42,13 +42,17 @@ Page({
         two: 0,
         three: 0,
     },
-    onLoad: function () {
+    onLoad: function (res) {
+        if(res.id == undefined || res.id == null || !res.id){
+            app.showErrorMsg('获取数据失败',1500);
+            return;
+        }
         var that = this;
         wx.request({
             method: "POST",
             dataType: 'json',
             url: config.service.getQuestionUrl,
-            data: {'id': 1},
+            data: {'id': res.id},
             header: {
                 'content-type': 'application/x-www-form-urlencoded'
             },

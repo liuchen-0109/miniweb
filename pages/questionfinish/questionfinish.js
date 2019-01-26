@@ -1,6 +1,14 @@
 var app = getApp();
 
 Page({
+    data:{
+        id:''
+    },
+    onLoad:function(res){
+        if(res.id){
+            this.setData({id:res.id})
+        }
+    },
     toCreate:function(){
         wx.redirectTo({url:'/pages/question/question'})
     },
@@ -14,8 +22,8 @@ Page({
         }
         return {
             title: '这是我的题目',
-            path: '/pages/index/index?id=123',
-            image:'/images/apple.jpg'
+            path: '/pages/index/index?id='+this.data.id,
+            imageUrl:'/images/apple.jpg'
         }
     }
 })

@@ -9,11 +9,14 @@ Page({
         userInfo: {},
         logged: false,
         takeSession: false,
-        requestResult: ''
+        requestResult: '',
+        hasid:'',
     },
     onLoad:function(res){
         if(res.id){
-            console.log(res.id)
+            this.setData({
+                hasid:res.id
+            })
         }
     },
     bindGetUserInfo: function () {
@@ -61,5 +64,10 @@ Page({
             // url:"/pages/answer/answer"
              url:"/pages/question/question"
         })
-    }
+    },
+    answerWeb:function(){
+      wx.navigateTo({
+          url:"/pages/answer/answer?id"+this.data.hasid
+      })
+}
 })
