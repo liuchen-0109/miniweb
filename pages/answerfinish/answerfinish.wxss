@@ -1,3 +1,28 @@
+.text_container{
+    color:#686388;
+    font-weight:blod;
+    margin:0 auto;
+    margin-top:250rpx;
+    margin-bottom:200rpx;
+    display:flex;
+    align-content: center;
+    justify-content: center;
 
-/**  border: 1rpx solid gainsboro;
-**/
+}
+.answer_container{
+    margin-top:100rpx;
+    width:80%;
+    background:red;
+    margin:0 auto;
+
+}
+.next{
+    margin:0;
+    background:#BBB0C8;
+    width:150rpx;
+    height:60rpx;
+    line-heigh:60rpx;
+    border:1rpx solid #686388;
+     border-radius:5px;
+
+}

@@ -1,0 +1,11 @@
+
+.title_container{
+    width:80%;
+    height:80rpx;
+    line-height:80rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-left:50rpx;
+    border-bottom: 1px solid #ccc;
+}

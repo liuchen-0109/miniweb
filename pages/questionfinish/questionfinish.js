@@ -21,9 +21,9 @@ Page({
             console.log(res.target)
         }
         return {
-            title: '这是我的题目',
+            title: app.globalData.shareTitle,
+            imageUrl:app.globalData.shareImage,
             path: '/pages/index/index?id='+this.data.id,
-            imageUrl:'/images/apple.jpg'
         }
     }
 })

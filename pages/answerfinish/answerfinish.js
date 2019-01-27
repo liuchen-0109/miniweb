@@ -13,8 +13,9 @@ Page({
             console.log(res.target)
         }
         return {
-            title: '自定义转发标题',
-            path: '/pages/index/index?id=123'
+            title: app.globalData.shareTitle,
+            imageUrl:app.globalData.shareImage,
+            path: '/pages/index/index?id='+res.id+'&openid='+app.globalData.openid
         }
     }
 })

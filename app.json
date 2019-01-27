@@ -1,10 +1,10 @@
 {
-  "pages": ["pages/index/index","pages/answer/answer","pages/question/question","pages/answerfinish/answerfinish","pages/questionfinish/questionfinish"],
+  "pages": ["pages/index/index","pages/questionfinish/questionfinish","pages/answerfinish/answerfinish","pages/answer/answer","pages/question/question","pages/questionList/questionList"],
   "window":{
-    "backgroundColor":"#F6F6F6",
+    "backgroundColor":"#BBB0C8",
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor":"#686388",
+    "navigationBarTitleText": "每日一问",
+    "navigationBarTextStyle":"#999"
   }
 }

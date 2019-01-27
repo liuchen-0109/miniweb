@@ -1,2 +1,5 @@
-<button bindtap="toCreate">创建题目</button>
-<button  open-type="share">分享</button>
+<view class="text_container">您已完成答题</view>
+<view class="answer_container">
+<button bindtap="toCreate" class="before">我来提问</button>
+<button  open-type="share" class="next">分享题目</button>
+</view>

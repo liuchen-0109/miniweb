@@ -1,49 +1,48 @@
-.conts{
-    width: 750rpx;
-    height: auto;
-    border: 1rpx soldi red;
-    margin-top: 30rpx;
+page{
+     background-color: #BBB0C8;
 }
-.areas{
-    width: 80%;
-    height:152rpx;
-    font-size: 30rpx;
-    text-indent: 28rpx;
-    padding-top: 30rpx;
-    paddint-left:40rpx;
-    paddint-right:40rpx;
-    margin: 80rpx auto;
-    overflow: hidden;
-    position: relative;
-    font-weight:bold
-
+text{
+    font-family:MicroSoft Yahei;
 }
 
-.areas_ans{
-    width: 80%;
-    height:100rpx;
-    font-size: 30rpx;
-    text-indent: 28rpx;
-    padding: 10rpx 5rpx;
-    margin: 80rpx auto;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius:10px;
+.btn_container{
+    background:#BBB0C8;
+    border:1px solid #686388;
+    width:200rpx;
+    height:80rpx;
+    border-radius:5px;
+    text-align:center;
+    margin-top:200rpx;
+    line-height:80rpx;
+    font-size:22rpx;
+}
 
+.btn{
+    font-weight:bold;
+    color:#686388;
 }
-.currentWordNumber{
-    font-size: 28rpx;
-    color: gray;
-    position: absolute;
-    left: 485rpx;
-    top: -7rpx;
+
+.next{
+    width:150rpx;
+    height:60rpx;
+    float:right;
+    line-height:60rpx;
+    margin-right: 100rpx;
+    font-size:22rpx;
+    color:#686388;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
-.hint{
-    font-size: 28rpx;
-    margin-left: 30rpx;
-    color: burlywood;
-}
-.ans_container{
-    margin: 30rpx auto;
+.before{
+    width:150rpx;
+    height:60rpx;
+    float:left;
+    margin-left: 100rpx;
+    font-size:22rpx;
+    color:#686388;
+    line-height:60rpx;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }

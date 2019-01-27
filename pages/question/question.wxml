@@ -31,7 +31,7 @@
     </textarea>
         </view>
         <view>
-            <button bindtap="nextAnswer1" size="mini" style="float:right;margin-right: 40rpx;"> 下一题</button>
+            <view bindtap="nextAnswer1"  class="next"><text>下一题</text></view>
         </view>
     </swiper-item>
     <swiper-item data-current="1">
@@ -66,10 +66,10 @@
     </textarea>
         </view>
         <view>
-            <button bindtap="beforeAnswer2" size="mini" style="float:left;margin-left: 40rpx;"> 上一题</button>
+            <view bindtap="beforeAnswer2" class="before" > 上一题</view>
         </view>
         <view>
-            <button bindtap="nextAnswer2" size="mini" style="float:right;margin-right: 40rpx;"> 下一题</button>
+            <view bindtap="nextAnswer2" class="next"> 下一题</view>
         </view>
     </swiper-item>
     <swiper-item data-current="2">
@@ -104,14 +104,14 @@
     </textarea>
         </view>
         <view>
-            <button bindtap="beforeAnswer3" size="mini" style="float:left;margin-left: 40rpx;"> 上一题</button>
+            <view bindtap="beforeAnswer3" class="before"> 上一题</view>
         </view>
     </swiper-item>
 
 </swiper>
 
 <view>
-    <button bindtap="create" disabled="{{active}}"> 创建问题</button>
+    <button class="btn_container" bindtap="create" disabled="{{active}}"><text class="btn">创建问题</text></button>
 </view>
 
 

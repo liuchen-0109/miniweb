@@ -262,4 +262,10 @@ Page({
             mask: true
         });
     },
+    onShareAppMessage(res) {
+        return {
+            title: '自定义转发标题',
+            path: '/pages/index/index?openid='+app.globalData.openid
+        }
+    }
 })

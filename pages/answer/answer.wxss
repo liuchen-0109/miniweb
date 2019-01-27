@@ -1,4 +1,4 @@
-.title_container{
+.title_container_answer{
     font-size: 30rpx;
     text-indent: 28rpx;
     padding: 30rpx 25rpx;
@@ -14,7 +14,7 @@
     border:1rpx solid #ccc;
     border-radius: 25rpx;
 }
-.answer_container{
+.answer_container_answer{
     width: auto;
     font-size: 30rpx;
     text-indent: 28rpx;

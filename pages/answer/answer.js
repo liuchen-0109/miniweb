@@ -43,10 +43,13 @@ Page({
         three: 0,
     },
     onLoad: function (res) {
-        if(res.id == undefined || res.id == null || !res.id){
-            app.showErrorMsg('获取数据失败',1500);
+        if (res.id == undefined || res.id == null || !res.id) {
+            app.showErrorMsg('获取数据失败', 1500);
             return;
         }
+        wx.showLoading({
+            title: '数据加载中',
+        });
         var that = this;
         wx.request({
             method: "POST",
@@ -102,40 +105,44 @@ Page({
                     app.showErrorMsg('暂无数据', 1500);
                     return
                 }
+                wx.hideLoading();
             },
             fail: function (res) {
+                wx.hideLoading();
                 app.showErrorMsg('网络连接失败，请刷新重试', 1500);
             }
         })
     },
     ans_one: function (e) {
         var key = this.request_data.one = e.currentTarget.dataset.value;
-       this.changeColoe(1,key);
+        this.changeColoe(1, key);
+        console.log(this.data.num)
         if (this.data.num > 1) {
-            this.setData({
-                currentTab: 1
-            });
+
             if (this.data.num == 2) {
                 if (this.request_data.one && this.request_data.two) {
                     this.setData({
                         showButton: true
                     });
-                } else if (this.data.num == 3) {
-                    if (this.request_data.one && this.request_data.two && this.request_data.three) {
-                        this.setData({
-                            showButton: true
-                        });
-                    }
                 }
-            } else {
-                this.setData({showButton: true})
+            } else if (this.data.num == 3) {
+                if (this.request_data.one && this.request_data.two && this.request_data.three) {
+                    this.setData({
+                        showButton: true
+                    });
+                }
             }
+            this.setData({
+                currentTab: 1
+            });
+        }else {
+            this.setData({showButton: true})
         }
     }
     ,
     ans_two: function (e) {
         var key = this.request_data.two = e.currentTarget.dataset.value;
-        this.changeColoe(2,key);
+        this.changeColoe(2, key);
         if (this.data.num > 2) {
             this.setData({
                 currentTab: 2
@@ -149,7 +156,7 @@ Page({
     ,
     ans_three: function (e) {
         var key = this.request_data.three = e.currentTarget.dataset.value;
-        this.changeColoe(3,key);
+        this.changeColoe(3, key);
         if (this.request_data.one && this.request_data.two && this.request_data.three) {
             this.setData({showButton: true})
         }
@@ -195,7 +202,7 @@ Page({
                                     duration: 1500,
                                     mask: true
                                 });
-                                wx.redirectTo({url:'/pages/answerfinish/answerfinish'})
+                                wx.redirectTo({url: '/pages/answerfinish/answerfinish'})
                                 wx.hideLoading();
                                 that.setData({active: false});
                             }
@@ -275,4 +282,11 @@ Page({
             }
         }
     },
+    onShareAppMessage(res) {
+        return {
+            title: app.globalData.shareTitle,
+            imageUrl:app.globalData.shareImage,
+            path: '/pages/index/index?openid='+app.globalData.openid
+        }
+    }
 })
