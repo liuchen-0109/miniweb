@@ -72,5 +72,21 @@ Page({
                 app.showErrorMsg("网络错误，更新数据失败", 1500);
             }
         })
+    },
+    input_search:function(e){
+        var obj =  wx.getStorageSync('question_list');
+        for(var i = 0;i<obj.length;i++){
+            var status = 0;
+            if(obj[i]['title_one'] && obj[i]['title_one'] != undefined && obj[i]['title_one'] != null){
+                if(obj[i]['title_one'].indexOf(e.detail.value) != -1) status =1;
+            }title_one
+            if(obj[i]['title_two'] && obj[i]['title_two'] != undefined && obj[i]['title_two'] != null){
+                if(obj[i]['title_two'].indexOf(e.detail.value) != -1)status =1;
+            }
+            if(obj[i]['title_three'] && obj[i]['title_three'] != undefined && obj[i]['title_three'] != null){
+                if(obj[i]['title_three'].indexOf(e.detail.value) != -1)status =1;
+            }
+        }
+
     }
 })

@@ -4,6 +4,8 @@ var config = require('../../config')
 qcloud.setLoginUrl(config.service.loginUrl)
 
 var app = getApp()
+const session = qcloud.Session.get()
+
 Page({
     data: {
         userInfo: {},
@@ -18,13 +20,24 @@ Page({
                 hasid: res.id
             })
         }
+        if (session) {
+            qcloud.loginWithCode({
+                success: res => {
+                    this.setData({userInfo: res, logged: true})
+                    app.globalData.userInfo = res;
+                    app.globalData.openid = res.openId;
+                    util.showSuccess('登录成功')
+                },
+                fail: err => {
+                    util.showModel('登录错误', err.message)
+                }
+            })
+        }
     },
     bindGetUserInfo: function (e) {
         if (this.data.logged) return
-        var golbal = app;
         util.showBusy('正在登录')
 
-        const session = qcloud.Session.get()
         var type = e.currentTarget.dataset.type;
         var that = this
         if (session) {
@@ -32,19 +45,9 @@ Page({
                 success: res => {
 
                     this.setData({userInfo: res, logged: true})
-                    golbal.globalData.userInfo = res;
-                    golbal.globalData.openid = res.openId;
-
+                    app.globalData.userInfo = res;
+                    app.globalData.openid = res.openId;
                     util.showSuccess('登录成功')
-                    if (type == 1) {
-                        setTimeout(function () {
-                            that.questionWeb()
-                        }, 1000)
-                    } else {
-                        setTimeout(function () {
-                            that.answerWeb()
-                        }, 1000)
-                    }
 
                 },
                 fail: err => {
@@ -55,18 +58,9 @@ Page({
             qcloud.login({
                 success: res => {
                     this.setData({userInfo: res, logged: true})
-                    golbal.globalData.userInfo = res;
-                    golbal.globalData.openid = res.openId;
+                    app.globalData.userInfo = res;
+                    app.globalData.openid = res.openId;
                     util.showSuccess('登录成功')
-                    if (type == 1) {
-                        setTimeout(function () {
-                            that.questionWeb()
-                        }, 1000)
-                    } else {
-                        setTimeout(function () {
-                            that.answerWeb()
-                        }, 1000)
-                    }
                 },
                 fail: err => {
                     util.showModel('登录错误', err.message)

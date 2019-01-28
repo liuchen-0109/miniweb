@@ -1,5 +1,5 @@
 {
   "usingComponents": {},
-  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "题目创建完成",
   "onReachBottomDistance": 100
 }

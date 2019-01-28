@@ -2,11 +2,9 @@
 <view class="container" style="display:flex;flex-direction:column;margin-top:160rpx;align-items:center;justify-content: center;">
     <image  class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}} "background-size="cover" ></image>
            <view class="userinfo-nickname" > Hello<text wx:if="{{logged}}">,{{userInfo.nickName}}</text></view>
-           <text bindtap="myQuestion">我的题目</text>
-
-           <button  class="btn_container"  data-type='1'  bindgetuserinfo="bindGetUserInfo"  open-type="getUserInfo" wx:if="{{!hasid &&!logged}}"><text class="btn">创建题目</text></button>
+           <text bindtap="myQuestion" wx:if="{{logged}}">我的题目</text>
+    <button  class="btn_container"  bindgetuserinfo="bindGetUserInfo"  open-type="getUserInfo" wx:if="{{!logged}}"><text class="btn">开始使用</text></button>
             <button  class="btn_container"  bindtap="questionWeb"  open-type="questionWeb" wx:if="{{!hasid && logged}}"><text class="btn">创建题目</text></button>
-            <button class="btn_container" bindtap="bindGetUserInfo" data-type='2' bindgetuserinfo="bindGetUserInfo"  open-type="getUserInfo" wx:if="{{hasid && !logged}}"><text class="btn">开始答题</text></button>
             <button class="btn_container" bindtap="answerWeb" wx:if="{{hasid && logged}}"><text class="btn">开始答题</text></button>
 </view>
 

@@ -1,5 +1,5 @@
 {
   "usingComponents": {},
-  "enablePullDownRefresh": true,
-  "onReachBottomDistance": 100
+  "navigationBarTitleText": "答题完成"
+
 }

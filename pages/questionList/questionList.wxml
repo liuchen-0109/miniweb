@@ -1,4 +1,5 @@
-<view style="margin-top:50rpx">
+<view class="search_container"><input class="search" bindinput="input_search" placeholder="按标题搜索"></input></view>
+<view style="margin-top:20rpx">
 <view wx:for="{{data_list}}">
     <view  class="title_container">{{item.title_one}}</view>
 </view>
